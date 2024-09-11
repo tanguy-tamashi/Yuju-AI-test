@@ -1,0 +1,2 @@
+# MincaAI
+Minca Ai website

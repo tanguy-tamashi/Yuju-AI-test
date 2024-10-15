@@ -1,2 +1,1 @@
-# Product Manager
-PM website job offers in Asia
+# Yuju AI assistant test

@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Your Bot</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
     <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
-        chatflowid: "671b93ec-0ce9-42e0-9f3d-00cf00bb6b6d",
+        chatflowid: "b1e42ad2-2c12-43c0-bd08-4c0e656960a9",
         apiHost: "https://flowiseai-railway-production-7641.up.railway.app",
         chatflowConfig: {
             // topK: 2
@@ -28,22 +44,22 @@
             },
             tooltip: {
                 showTooltip: true,
-                tooltipMessage: 'Hi There 👋!',
+                tooltipMessage: 'Ask your question!',
                 tooltipBackgroundColor: 'black',
                 tooltipTextColor: 'white',
                 tooltipFontSize: 16,
             },
             chatWindow: {
                 showTitle: true,
-                title: 'Flowise Bot',
+                title: 'Yuju Bot',
                 titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
                 showAgentMessages: true,
-                welcomeMessage: 'Hello! This is custom welcome message',
-                errorMessage: 'This is a custom error message',
+                welcomeMessage: 'Hello! Welcome to Yuju app AI assistant. You can ask me your question !',
+                errorMessage: 'I'm not sure to understand',
                 backgroundColor: "#ffffff",
                 backgroundImage: 'enter image path or link', // If set, this will overlap the background color of the chat window.
-                height: 700,
-                width: 400,
+                height: 900,
+                width: 600,
                 fontSize: 16,
                 //starterPrompts: ['What is a bot?', 'Who are you?'], // It overrides the starter prompts set by the chat flow passed
                 starterPromptFontSize: 15,
@@ -79,7 +95,7 @@
                 footer: {
                     textColor: '#303235',
                     text: 'Powered by',
-                    company: 'MincAI',
+                    company: 'MincaAI',
                     companyLink: 'https://flowiseai.com',
                 }
             }
@@ -88,4 +104,3 @@
 </script>
 </body>
 </html>
-
